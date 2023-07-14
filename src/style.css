@@ -11,7 +11,9 @@ body {
     display: relative;
     
 }
-.banner { position: absolute }
+.banner { position: absolute; z-index: 100; 
+    top: 0; left: 0;
+}
 .restaurant {
     position: absolute;
     top: 14rem;
@@ -53,4 +55,86 @@ button:hover {
 }
 .quality {
     padding: 3% 10%;
+}
+
+/* contact  padding: 10% 5%;   */
+.contact { position: relative; z-index: 0} 
+
+.page_title {
+    padding: 5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+.page_body {
+    padding: 1rem 2rem;
+}
+.info_img { 
+    position: absolute; 
+    top:0;
+    left: 0;
+    opacity: 0.15;
+    /* top: 14rem;
+    left: 35rem;
+    width: 20rem;  */
+    width:100vw;
+    height: auto;
+    z-index: -1;
+}
+
+.page_info {font-weight: 500;}
+
+.info_tel, .info_email, .info_dir, .page_loc {
+    padding: 0 2rem;
+    font-weight: 500;
+}
+
+
+.info_map {
+    padding: 2rem 0;
+    background-color: white;
+    width: 50%
+}
+
+/* menu */
+.menu {
+    display: flex;
+    flex-direction: column;
+    margin: 6rem 10rem;
+    position: relative;
+    z-index: 0;
+}
+
+.img_adam_hall {
+    padding:0; margin:0;
+    width:  100vw; 
+    height: auto;
+    position: absolute;
+    top: 0; left: 0;
+    z-index: -1;
+    opacity: 0.15;
+
+}
+.menu_title {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.gallery_imgs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    /* grid-area: auto; */
+    width: 60%;
+}
+.dine_options {
+    margin-left: 2rem;
+    
+}
+.item_img {
+    width: 120px;
+    margin-top: 1rem;
+}
+
+.gallery_title {
+    font-size: 1.6rem;
+    font-weight: 500;
 }
